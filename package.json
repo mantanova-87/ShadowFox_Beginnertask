@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/mantanova-87/ShadowFox_Beginnertask/issues"
   },
-  "homepage": "https://github.com/mantanova-87/ShadowFox_Beginnertask#readme"
+  "homepage": "https://github.com/mantanova-87/ShadowFox_Beginnertask#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
 }
