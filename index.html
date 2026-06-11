@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white">
+<body class="overflow-hidden">
 
-    <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl font-bold">
-            My Portfolio
-        </h1>
+    <div id="hero" class="relative w-screen h-screen overflow-hidden">
+
+        <img
+            id="deskImage"
+            src="./assets/desk-setup.jpg"
+            alt="Desk Setup"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+
+       <div class="absolute top-36.5 left-1/2 -translate-x-1/2 z-10">
+        <div id="pfp" class="p-1 rounded-full bg-gradient-to-r from-blue-500 to-red-600 opacity-0 transition">
+            <img
+                id="pfp1"
+                src="./assets/profile.jpg"
+                alt="Profile"
+                class="w-22 h-22 rounded-full object-cover opacity-0 transition"
+             >
+        </div>
+       </div>
+       <div id="aboutcard" class="absolute top-66 left-152.5 -translate-y-1/2  bg-black backfrop-blur-md text-white text-xs px-0.5 py-0.5 border-2 border-yellow-400 font-bold font-serif rounded-xl text-center">Mantavya Kumar<br>Cybersecurity Enthusiast
+       </div>
+       <div id="educard" class="absolute top-80 left-130 -translate-y-1/2  bg-black backfrop-blur-md text-white text-xs px-0.5 py-0.5 border-2 border-yellow-400 font-bold font-serif rounded-xl text-center">Education Details
+       </div>
+       <div id="concard" class="absolute top-80 left-200 -translate-y-1/2  bg-black backfrop-blur-md text-white text-xs px-0.5 py-0.5 border-2 border-yellow-400 font-bold font-serif rounded-xl text-center">Contact Details
+       </div>
+       <div id="skillcard" class="absolute top-100 left-105 -translate-y-1/2  bg-black backfrop-blur-md text-white text-xs px-0.5 py-0.5 border-2 border-yellow-400 font-bold font-serif rounded-xl text-center">Skills
+       </div>
+       <div id="projectcard" class="absolute top-100 left-160 -translate-y-1/2  bg-black backfrop-blur-md text-white text-xs px-0.5 py-0.5 border-2 border-yellow-400 font-bold font-serif rounded-xl text-center">Projects
+       </div>
+       <div id="certcard" class="absolute top-100 left-210 -translate-y-1/2  bg-black backfrop-blur-md text-white text-xs px-0.5 py-0.5 border-2 border-yellow-400 font-bold font-serif rounded-xl text-center">Certificates And<br> Achievements
+       </div>
+
+    
+
     </div>
 
     <script src="script.js"></script>
