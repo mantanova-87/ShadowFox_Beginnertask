@@ -43,7 +43,8 @@ menuBtn.addEventListener("click", () => {
             "bg-black/90",
             "backdrop-blur-md",
             "p-4",
-            "gap-3"
+            "gap-3",
+            "z-[1000]"
         );
 
     } else {
