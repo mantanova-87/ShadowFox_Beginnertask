@@ -66,3 +66,17 @@ menuBtn.addEventListener("click", () => {
     }
 
 });
+
+const pages = {
+    about: "aboutme.html",
+    edu: "education.html",
+    con: "contactme.html",
+    skl: "skillsandprojects.html",
+    ach: "achievements.html"
+};
+
+for (const id in pages) {
+    document.getElementById(id).addEventListener("click", () => {
+        window.location.href = pages[id];
+    });
+}
