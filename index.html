@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="overflow-hidden">
-    <div class="relative w-screen h-screen bg-gradient-to-br from-black via-slate-900 to-purple-900">
-        <div class="pt-1">
-            <nav
-                class="flex justify-between items-center  rounded-4xl bg-gradient-to-br from-purple-900 via-slate-900 to-black backdrop-blur-md border-white/0.90 px-3 py-1 shadow-lg shadow-black/50 z-50">
-
+<body class="overflow-x-hidden min-h-screen bg-gradient-to-br from-black via-slate-900 to-purple-900">  
+    <div class="pt-1">
+        <nav
+            class="flex justify-between items-center  rounded-4xl bg-gradient-to-br from-purple-900 via-slate-900 to-black backdrop-blur-md border-white/0.90 px-3 py-1 shadow-lg shadow-black/50 z-50">
                 <div class="flex items-center justify-between w-full">
                     <img id="logo"
                     src="./assets/favicon2.png"
@@ -25,12 +22,13 @@
                         ☰
                     </button>
                 </div>
+
                 <div id="navLinks" class="hidden md:flex items-center whitespace-nowrap   justify-between gap-8">
                     <button id="about" class="px-1 py-0.9 bg-blue-500 rounded-lg text-white">
                         About Me
                     </button>
                     <button id="edu" class="px-1 py-0.9 bg-blue-500 rounded-lg text-white">
-                        Educatioal Details
+                        Educational Details
                     </button>
                     <button id="con" class="px-1 py-0.9 bg-blue-500 rounded-lg text-white">
                         Contact Me
@@ -42,8 +40,9 @@
                         Achievements
                     </button>
                 </div>
-            </nav>
+        </nav>
         </div>
+
         <section class="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-12 gap-10">
             <!-- Left Side -->
             <div class="md:w-1/2 text-white">
@@ -69,18 +68,47 @@
             <div class="md:w-1/2 flex justify-center items-center">
                 <div
                     class="p-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 shadow-xl shadow-cyan-500/30">
-
-                    <img id="heroPfp" src="./assets/profile.jpg" alt="Profile"
-                        class="w-64 h-64 rounded-full object-cover">
-
+                    <img id="heroPfp" 
+                    src="./assets/profile.jpg" 
+                    alt="Profile"
+                    class="w-64 h-64 rounded-full object-cover">
                 </div>
-
             </div>
-
         </section>
-
-    </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-8">
+            <!-- Card 1 -->
+            <div id="card1" class="group h-25 bg-slate-900/50 backdrop-blur-md border border-cyan-400/30 rounded-2xl p-6   shadow-lg shadow-cyan-500/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40">
+                <h2 class="text-white text-2xl font-bold mb-4">
+                    About Me
+                </h2>
+            </div>
+            <! -- Card 2 -->
+            <div id="card2" class="group h-25 bg-slate-900/50 backdrop-blur-md border border-purple-400/30 rounded-2xl p-6     shadow-lg shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40">
+                <h2 class="text-white text-2xl font-bold mb-4">Contact Me</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-8">
+            <!-- Card 1 -->
+            <div id="card3" class="group h-25 bg-slate-900/50 backdrop-blur-md border border-cyan-400/30 rounded-2xl p-6   shadow-lg shadow-cyan-500/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40">
+                <h2 class="text-white text-2xl font-bold mb-4">
+                    Educational Details
+                </h2>
+            </div>
+            <!--Card 2 -->
+            <div id="card4" class="group h-25 bg-slate-900/50 backdrop-blur-md border border-purple-400/30 rounded-2xl p-6     shadow-lg shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40">
+                <h2 class="text-white text-2xl font-bold mb-4">Skills and Projects</h2>
+            </div>
+            <!--Card 3 -->
+            <div id="card5" class="group h-25 bg-slate-900/50 backdrop-blur-md border border-purple-400/30 rounded-2xl p-6     shadow-lg shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40">
+                <h2 class="text-white text-2xl font-bold mb-4">Certificates And Achievements</h2>
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
-
+<footer class="mt-12 border-t border-white/10 bg-black/20 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col items-center justify-between gap-4 text-gray-300       text-sm">
+        © 2026 Mantavya Kumar. All Rights Reserved.
+    </div>
+</footer>
 </html>

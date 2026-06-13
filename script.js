@@ -80,3 +80,49 @@ for (const id in pages) {
         window.location.href = pages[id];
     });
 }
+
+function addTilt(card) {
+
+    card.addEventListener("mousemove", (e) => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const rotateY = (x / rect.width - 0.5) * 20;
+        const rotateX = -(y / rect.height - 0.5) * 20;
+
+        card.style.transform =
+            `perspective(1000px)
+             rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)
+             scale(1.05)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform =
+            "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+    });
+
+}
+addTilt(document.getElementById("card1"));
+addTilt(document.getElementById("card2"));
+addTilt(document.getElementById("card3"));
+addTilt(document.getElementById("card4"));
+addTilt(document.getElementById("card5"));
+
+
+const cards = {
+    card1: "aboutme.html",
+    card2: "education.html",
+    card3: "contactme.html",
+    card4: "skillsandprojects.html",
+    card5: "achievements.html"
+};
+
+for (const id in cards) {
+    document.getElementById(id).addEventListener("click", () => {
+        window.location.href = cards[id];
+    });
+}
