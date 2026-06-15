@@ -9,21 +9,7 @@ function typeWriter() {
     }
 }
 typeWriter();
-const heroPfp = document.getElementById("heroPfp");
-let enlarged = false;
-heroPfp.style.transition = "all 0.4s ease";
-heroPfp.addEventListener("click", () => {
-    enlarged = !enlarged;
-    if (enlarged) {
-        heroPfp.style.transform = "scale(1.4)";
-        heroPfp.style.zIndex = "999";
-        heroPfp.style.position = "relative";
-    } else {
-        heroPfp.style.transform = "scale(1)";
-        heroPfp.style.zIndex = "";
-        heroPfp.style.position = "";
-    }
-});
+
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
