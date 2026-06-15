@@ -115,8 +115,8 @@ addTilt(document.getElementById("card5"));
 
 const cards = {
     card1: "aboutme.html",
-    card2: "education.html",
-    card3: "contactme.html",
+    card2: "contactme.html",
+    card3: "education.html",
     card4: "skillsandprojects.html",
     card5: "achievements.html"
 };
@@ -126,3 +126,24 @@ for (const id in cards) {
         window.location.href = cards[id];
     });
 }
+
+const elements = document.querySelectorAll(".typewriter");
+
+elements.forEach((element, index) => {
+    const text = element.textContent;
+    element.textContent = "";
+
+    setTimeout(() => {
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, 30);
+            }
+        }
+
+        type();
+    }, index * 1500);
+});
