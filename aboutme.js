@@ -8,6 +8,19 @@ function typeWriter() {
         setTimeout(typeWriter, 100);
     }
 }
+typeWriter();
+const card=document.getElementById("intro");
+const text1=card.textContent;
+card.textContent="";
+let i=0;
+function typeWriter1() {
+    if (i<text1.length) {
+        card.textContent+=text1.charAt(i);
+        i++;
+        setTimeout(typeWriter1,30);
+    }
+}
+typeWriter1();
 const heroPfp = document.getElementById("pfp1");
 let enlarged = false;
 heroPfp.style.transition = "all 0.4s ease";
@@ -23,7 +36,6 @@ heroPfp.addEventListener("click", () => {
         heroPfp.style.position = "";
     }
 });
-typeWriter();
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 menuBtn.addEventListener("click", () => {
