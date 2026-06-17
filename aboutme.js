@@ -1,26 +1,26 @@
-const navTitle = document.getElementById("navTitle");
-const text = "Cybersecurity Enthusiast | Developer | Problem Solver ";
-let index = 0;
-function typeWriter() {
-    if (index < text.length) {
-        navTitle.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, 100);
+function typeWriter(elementId, speed) {
+    const element = document.getElementById(elementId);
+
+    const text = element.textContent;
+    element.textContent = "";
+
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
     }
+
+    type();
 }
-typeWriter();
-const card=document.getElementById("intro");
-const text1=card.textContent;
-card.textContent="";
-let i=0;
-function typeWriter1() {
-    if (i<text1.length) {
-        card.textContent+=text1.charAt(i);
-        i++;
-        setTimeout(typeWriter1,30);
-    }
-}
-typeWriter1();
+typeWriter("navTitle",100);
+typeWriter("intro",20);
+typeWriter("intro1",75);
+
+
 const heroPfp = document.getElementById("pfp1");
 let enlarged = false;
 heroPfp.style.transition = "all 0.4s ease";
@@ -78,11 +78,9 @@ menuBtn.addEventListener("click", () => {
 
 });
 const pages = {
-    about: "aboutme.html",
-    edu: "education.html",
-    con: "contactme.html",
-    skl: "skillsandprojects.html",
-    ach: "achievements.html"
+    abt: "aboutme.html",
+    edus: "educationandskills.html",
+    pra: "projectsandachievements.html",
 };
 
 for (const id in pages) {
@@ -101,5 +99,5 @@ const cards = [
 cards.forEach((card, index) => {
     setTimeout(() => {
         card.classList.remove("opacity-0");
-    }, (index+1) * 1000);
+    }, (index+2) * 1000);
 });
