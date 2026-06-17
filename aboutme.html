@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="overflow-x-hidden min-h-screen bg-gradient-to-br from-black via-slate-900 to-purple-900">  
-    <div class="pt-1 bg-[url('/assets/BG.jpg')] bg-cover bg-center h-screen z-10">
+    <div class="pt-1 bg-[url('/assets/BG.jpg')] bg-center min-h-screen z-10 bg-repeat">
         <nav
             class="flex justify-between items-center  rounded-4xl bg-gradient-to-br from-purple-900 via-slate-900 to-black backdrop-blur-md border-white/0.90 px-3 py-1 shadow-lg shadow-black/50 z-50">
                 <div class="flex items-center justify-between w-full">
@@ -42,44 +42,53 @@
                     </button>
                 </div>
         </nav>
-
-        <section class="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-12 gap-10">
-            <!-- Left Side -->
-            <div class="md:w-1/2 text-white">
-
-                <h1 class="text-5xl font-bold mb-4">
-                    Hi, I'm Mantavya Kumar
-                </h1>
-
-                <p class="text-lg mb-4">
-                    Cybersecurity enthusiast passionate about securing digital systems.
+        <section class="grid mt-25 grid-cols-1 md:grid-cols-3 md:flex-row items-center justify-between px-8 py-1 gap-8">
+            <div id="c1" class="relative w-100 h-auto md:-mt-70 bg-slate-900/60 rounded-2xl p-5  opacity-0 translate-y-10 duration-700  backdrop-blur-md border border-cyan-400/30  shadow-lg shadow-cyan-500/20 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40">
+                <p class="text-white">
+                    Hello! I am Mantavya Kumar,a B.Tech Computer<br>Science and Engineering (Cybersecurity) student at<br>the Central University of Jammu with a strong<br>interest in areas that include cybersecurity,web<br>,data analysis and emerging technologies.
                 </p>
-
-                <p class="text-lg mb-4">
-                    Skilled in programming, networking, and security research.
-                </p>
-
-                <p class="text-lg">
-                    Exploring cybersecurity, web development, and modern technologies.
-                </p>
-
             </div>
-
-            <div class="md:w-1/2 flex justify-center items-center">
-                <div class="p-2 rounded-full object-cover shadow-xl shadow-cyan-500/30">
-                    <img id="heroPfp" 
-                    src="./assets/profilepicture1.png" 
-                    alt="Profile"
-                    class="w-64 h-64 rounded-full object-cover">
-                </div>
+            <img
+                id="pfp1"
+                src="./assets/pfp1.jpg"
+                alt="Profile"
+                class="w-70 ml-16 h-auto flex  justify-center items-center rounded-full object-cover opacity-0   backdrop-blur-md border border-cyan-400/30  shadow-lg shadow-cyan-500/20 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40 z-10"
+            >    
+            <div id="c2" class="relative W-100 h-auto md:-mt-70 bg-slate-900/60 rounded-2xl p-5 opacity-0 translate-y-10 duration-700  backdrop-blur-md border border-cyan-400/30  shadow-lg shadow-cyan-500/20 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40">                
+                <p class="text-white">
+                    I am committed to developing practical,innovative<br>solutions for the greater good of society<br>and continuously enhancing my technical expertise through projects, hackathons, and independent learning.
+                </p>
             </div>
         </section>
+        <section class="flex  flex-col-reverse md:flex-row items-center justify-between px-8 py-1 gap-8">
+            <div id="c3" class="relative w-125 h-auto  bg-slate-900/60 rounded-2xl p-5 opacity-0 translate-y-10 duration-700  backdrop-blur-md border border-cyan-400/30  shadow-lg shadow-cyan-500/20 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40">
+                <p class="text-white">
+                My projects include a Progress Tracker Web Application.<br>Prabhav,an illegal mining monitoring dashboard prototype.<br>EmotionLens,a browser extension designed to identify<br>emotionally significant content.These experiences have<br>strengthened my proficiency in JavaScript,Python,frontend<br>development,database management and deployment platforms..
+                </p>
+            </div>
+            <div id="c4" class="relative w-125 h-auto  bg-slate-900/60 rounded-2xl p-5 opacity-0 translate-y-10 duration-700  backdrop-blur-md border border-cyan-400/30  shadow-lg shadow-cyan-500/20 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40">
+                <p class="text-white">
+                I have been recognized with several achievements,including<br>1st Place in the IEEE Tech Sanskriti Hackathon(IEEE Day 2025),<br>1st Place in Faultline at Cognizance 2026(IIT Roorkee),<br>additional accolades in technical competitions.I am passionate<br>about continuous learning,exploring emerging technologies,and<br>developing secure,impactful solutionsthat address real-world challenges.
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <div class="mt-12 border-t border-white/10 bg-black/20 backdrop-blur-md">
+            <div
+                class="max-w-7xl mx-auto px-6 py-6 flex flex-col items-center justify-between gap-4 text-gray-300 text-sm">
+                © 2026 Mantavya Kumar. All Rights Reserved.
+            </div>
+        </div>        
     </div>
     <script src="aboutme.js"></script>
 </body>
-<footer class="mt-12 border-t border-white/10 bg-black/20 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col items-center justify-between gap-4 text-gray-300       text-sm">
-        © 2026 Mantavya Kumar. All Rights Reserved.
-    </div>
-</footer>
 </html>

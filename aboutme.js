@@ -8,8 +8,7 @@ function typeWriter() {
         setTimeout(typeWriter, 100);
     }
 }
-typeWriter();
-const heroPfp = document.getElementById("heroPfp");
+const heroPfp = document.getElementById("pfp1");
 let enlarged = false;
 heroPfp.style.transition = "all 0.4s ease";
 heroPfp.addEventListener("click", () => {
@@ -24,9 +23,9 @@ heroPfp.addEventListener("click", () => {
         heroPfp.style.position = "";
     }
 });
+typeWriter();
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
-
 menuBtn.addEventListener("click", () => {
 
     if (navLinks.classList.contains("hidden")) {
@@ -66,7 +65,6 @@ menuBtn.addEventListener("click", () => {
     }
 
 });
-
 const pages = {
     about: "aboutme.html",
     edu: "education.html",
@@ -80,3 +78,16 @@ for (const id in pages) {
         window.location.href = pages[id];
     });
 }
+const cards = [
+    document.getElementById("pfp1"),
+    document.getElementById("c1"),
+    document.getElementById("c2"),
+    document.getElementById("c3"),
+    document.getElementById("c4")
+];
+
+cards.forEach((card, index) => {
+    setTimeout(() => {
+        card.classList.remove("opacity-0");
+    }, (index+1) * 1000);
+});
