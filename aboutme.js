@@ -18,7 +18,7 @@ function typeWriter(elementId, speed) {
 }
 typeWriter("navTitle",100);
 typeWriter("intro",20);
-typeWriter("intro1",75);
+typeWriter("intro1",50);
 
 
 const heroPfp = document.getElementById("pfp1");
@@ -91,9 +91,11 @@ for (const id in pages) {
 const cards = [
     document.getElementById("pfp1"),
     document.getElementById("c1"),
-    document.getElementById("c2"),
+    document.getElementById("intro1"),
     document.getElementById("c3"),
-    document.getElementById("c4")
+    document.getElementById("c4"),
+    document.getElementById("c5"),
+    document.getElementById("c6")
 ];
 
 cards.forEach((card, index) => {

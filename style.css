@@ -409,6 +409,12 @@
   .max-w-\[22rem\] {
     max-width: 22rem;
   }
+  .max-w-screen {
+    max-width: 100vw;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
   .border-collapse {
     border-collapse: collapse;
   }
