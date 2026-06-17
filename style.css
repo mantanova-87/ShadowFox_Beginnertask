@@ -388,6 +388,9 @@
   .w-1150 {
     width: calc(var(--spacing) * 1150);
   }
+  .w-\[90vw\] {
+    width: 90vw;
+  }
   .w-auto {
     width: auto;
   }
@@ -402,6 +405,9 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-\[22rem\] {
+    max-width: 22rem;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -711,6 +717,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .break-all {
+    word-break: break-all;
   }
   .whitespace-nowrap {
     white-space: nowrap;
