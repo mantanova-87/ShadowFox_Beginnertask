@@ -72,3 +72,13 @@ for (const id in pages) {
         window.location.href = pages[id];
     });
 }
+const cards = [
+    document.getElementById("c1"),
+    document.getElementById("c2")
+];
+
+cards.forEach((card, index) => {
+    setTimeout(() => {
+        card.classList.remove("opacity-0");
+    }, (index+2) * 1000);
+});

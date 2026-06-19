@@ -18,14 +18,12 @@
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-purple-900: oklch(38.1% 0.176 304.987);
     --color-pink-500: oklch(65.6% 0.241 354.308);
-    --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
-    --container-4xl: 56rem;
     --container-5xl: 64rem;
     --container-7xl: 80rem;
     --text-sm: 0.875rem;
@@ -226,6 +224,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -268,9 +269,6 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
-  .h-32 {
-    height: calc(var(--spacing) * 32);
-  }
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -298,9 +296,6 @@
   .w-\[90vw\] {
     width: 90vw;
   }
-  .w-\[100vw\] {
-    width: 100vw;
-  }
   .w-auto {
     width: auto;
   }
@@ -313,38 +308,14 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
-  .max-w-\[3rem\] {
-    max-width: 3rem;
-  }
-  .max-w-\[4rem\] {
-    max-width: 4rem;
-  }
-  .max-w-\[4zrem\] {
-    max-width: 4zrem;
-  }
   .max-w-\[22rem\] {
     max-width: 22rem;
-  }
-  .max-w-\[30rem\] {
-    max-width: 30rem;
-  }
-  .max-w-\[40rem\] {
-    max-width: 40rem;
   }
   .max-w-\[45rem\] {
     max-width: 45rem;
   }
-  .max-w-\[95vw\] {
-    max-width: 95vw;
-  }
   .max-w-\[98vw\] {
     max-width: 98vw;
-  }
-  .max-w-\[rem\] {
-    max-width: rem;
-  }
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
   .flex-1 {
     flex: 1;
@@ -379,6 +350,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -576,6 +550,12 @@
   }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .text-2xl {
     font-size: var(--text-2xl);
