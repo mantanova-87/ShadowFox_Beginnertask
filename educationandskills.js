@@ -2,7 +2,7 @@ function typeWriter(elementId, speed) {
     const element = document.getElementById(elementId);
 
     const text = element.textContent;
-    element.textContent = "";
+    element.textContent ="";
 
     let i = 0;
 
@@ -16,9 +16,9 @@ function typeWriter(elementId, speed) {
 
     type();
 }
-typeWriter("navTitle",100);
-typeWriter("intro",100);
-
+typeWriter("navTitle",50);
+typeWriter("intro",50);
+typeWriter("c6",100);
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -73,8 +73,23 @@ for (const id in pages) {
     });
 }
 const cards = [
+    document.getElementById("intro"),
     document.getElementById("c1"),
-    document.getElementById("c2")
+    document.getElementById("c2"),
+    document.getElementById("c3"),
+    document.getElementById("c4"),
+    document.getElementById("c5"),
+    document.getElementById("c6"),
+    document.getElementById("c7"),
+    document.getElementById("c8"),
+    document.getElementById("c9"),
+    document.getElementById("c10"),
+    document.getElementById("c11"),
+    document.getElementById("c12"),
+    document.getElementById("c13"),
+    document.getElementById("c14"),
+    document.getElementById("c15"),
+    document.getElementById("c16")
 ];
 
 cards.forEach((card, index) => {
