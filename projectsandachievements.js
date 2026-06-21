@@ -9,21 +9,7 @@ function typeWriter() {
     }
 }
 typeWriter();
-const heroPfp = document.getElementById("heroPfp");
-let enlarged = false;
-heroPfp.style.transition = "all 0.4s ease";
-heroPfp.addEventListener("click", () => {
-    enlarged = !enlarged;
-    if (enlarged) {
-        heroPfp.style.transform = "scale(1.4)";
-        heroPfp.style.zIndex = "999";
-        heroPfp.style.position = "relative";
-    } else {
-        heroPfp.style.transform = "scale(1)";
-        heroPfp.style.zIndex = "";
-        heroPfp.style.position = "";
-    }
-});
+
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -79,64 +65,18 @@ for (const id in pages) {
     });
 }
 
-function addTilt(card) {
+const cards = [
+    document.getElementById("category"),
+    document.getElementById("c1"),
+    document.getElementById("c2"),
+    document.getElementById("c3"),
+    document.getElementById("c4"),
+    document.getElementById("c5"),
+    document.getElementById("c6")  
+];
 
-    card.addEventListener("mousemove", (e) => {
-
-        const rect = card.getBoundingClientRect();
-
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const rotateY = (x / rect.width - 0.5) * 20;
-        const rotateX = -(y / rect.height - 0.5) * 20;
-
-        card.style.transform =
-            `perspective(1000px)
-             rotateX(${rotateX}deg)
-             rotateY(${rotateY}deg)
-             scale(1.05)`;
-    });
-
-    card.addEventListener("mouseleave", () => {
-        card.style.transform =
-            "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
-    });
-
-}
-addTilt(document.getElementById("card1"));
-addTilt(document.getElementById("card2"));
-addTilt(document.getElementById("card3"));
-
-const cards = {
-    card1: "aboutme.html",
-    card2: "educationandskills.html",
-    card3: "projectsandachievements.html",
-};
-
-for (const id in cards) {
-    document.getElementById(id).addEventListener("click", () => {
-        window.location.href = cards[id];
-    });
-}
-
-const elements = document.querySelectorAll(".typewriter");
-
-elements.forEach((element, index) => {
-    const text = element.textContent;
-    element.textContent = "";
-
+cards.forEach((card, index) => {
     setTimeout(() => {
-        let i = 0;
-
-        function type() {
-            if (i < text.length) {
-                element.textContent += text.charAt(i);
-                i++;
-                setTimeout(type, 30);
-            }
-        }
-
-        type();
-    }, index * 1500);
+        card.classList.remove("opacity-0");
+    }, (index+2) * 1000);
 });
