@@ -845,6 +845,31 @@
       width: calc(1 / 2 * 100%);
     }
   }
+  .md\:w-2 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:w-2\/5 {
+    @media (width >= 48rem) {
+      width: calc(2 / 5 * 100%);
+    }
+  }
+  .md\:w-3\/5 {
+    @media (width >= 48rem) {
+      width: calc(3 / 5 * 100%);
+    }
+  }
+  .md\:w-45\/100 {
+    @media (width >= 48rem) {
+      width: calc(45 / 100 * 100%);
+    }
+  }
+  .md\:w-55\/100 {
+    @media (width >= 48rem) {
+      width: calc(55 / 100 * 100%);
+    }
+  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));

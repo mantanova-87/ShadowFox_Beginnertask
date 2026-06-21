@@ -5,7 +5,7 @@ function typeWriter() {
     if (index < text.length) {
         navTitle.textContent += text.charAt(index);
         index++;
-        setTimeout(typeWriter, 100);
+        setTimeout(typeWriter, 30);
     }
 }
 typeWriter();
@@ -139,4 +139,20 @@ elements.forEach((element, index) => {
 
         type();
     }, index * 1500);
+});
+const cards1 = [
+    document.getElementById("sec"),
+    document.getElementById("pic"),
+    document.getElementById("text"),
+    document.getElementById("section"),
+    document.getElementById("cards"),
+    document.getElementById("card1"),
+    document.getElementById("card2"),
+    document.getElementById("card3")
+];
+
+cards1.forEach((card, index) => {
+    setTimeout(() => {
+        card.classList.remove("opacity-0");
+    }, (index+2) * 1000);
 });
