@@ -72,6 +72,7 @@ const cards = [
     document.getElementById("c3"),
     document.getElementById("c4"),
     document.getElementById("c5"),
+    document.getElementById("category2"),
     document.getElementById("c6")  
 ];
 
