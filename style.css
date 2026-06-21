@@ -815,9 +815,19 @@
       }
     }
   }
+  .md\:-mt-10 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * -10);
+    }
+  }
   .md\:-mt-20 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * -20);
+    }
+  }
+  .md\:-mt-30 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * -30);
     }
   }
   .md\:flex {
