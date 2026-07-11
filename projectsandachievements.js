@@ -69,6 +69,7 @@ const cards = [
     document.getElementById("category"),
     document.getElementById("c1"),
     document.getElementById("c2"),
+    document.getElementById("P1") ,
     document.getElementById("c3"),
     document.getElementById("c4"),
     document.getElementById("c5"),
